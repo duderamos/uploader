@@ -1,2 +1,12 @@
 %h1 Users#show
-%p Find me in app/views/users/show.html.haml
+%table
+  %tr
+    %td
+      = image_tag @user.picture.avatar.url
+    %td
+      %li
+        Name
+        = @user.name
+      %li
+        Email
+        = @user.email
