@@ -6,6 +6,10 @@ require 'rspec/rails'
 
 ActiveRecord::Migration.maintain_test_schema!
 
+Capybara.configure do |config|
+  config.javascript_driver = :poltergeist
+end
+
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
