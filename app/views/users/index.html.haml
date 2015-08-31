@@ -1,0 +1,13 @@
+%h1 Users#index
+%table
+  - @users.each do |user|
+    %tr
+      %td
+        = user.name
+      %td
+        = user.email
+      %td
+        = image_tag user.picture.avatar.url
+      %td
+        = link_to 'Remove', user_path(user.id), method: :delete, data: { confirm: 'Are you sure?' }
+

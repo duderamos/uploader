@@ -1,0 +1,14 @@
+%h1 Users#new
+
+= form_for @user do |f|
+  .user-form
+    = f.label :name
+    = f.text_field :name
+  .user-form
+    = f.label :email
+    = f.text_field :email
+  .user-form
+    = f.label :picture
+    = f.file_field :picture
+  .user-form
+    = f.submit 'Save'
