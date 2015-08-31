@@ -68,6 +68,8 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    faker (1.5.0)
+      i18n (~> 0.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -97,6 +99,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
+    mini_magick (4.2.10)
     mini_portile (0.6.2)
     minitest (5.8.0)
     multi_json (1.11.2)
@@ -196,9 +199,11 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.1.0)
   factory_girl_rails
+  faker
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  mini_magick
   rails (= 4.2.3)
   rspec-rails
   sass-rails (~> 5.0)
